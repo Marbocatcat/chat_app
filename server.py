@@ -61,7 +61,7 @@ def broadcast(msg, prefix=''):  # Prefix is for the name identification.
 
 # Code to start our server and listen for incoming connections.
 if __name__ == '__main__':
-    server.listen(5)  # Listens for 5 connections at max.
+    SERVER.listen(5)  # Listens for 5 connections at max.
     print('Waiting for connection...')
     ACCEPT_THREAD = Thread(target=accept_incoming_connections)
     ACCEPT_THREAD.start()
